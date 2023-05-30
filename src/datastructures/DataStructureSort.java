@@ -1,3 +1,5 @@
+package datastructures;
+
 public class DataStructureSort {
 
         private static void merge(int[] ints, int firsIndex,int middleIndex,int lastIndex) {

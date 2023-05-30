@@ -1,3 +1,5 @@
+package collections;
+
 import java.util.Arrays;
 
 public class MyListArray<E> {
@@ -53,7 +55,7 @@ public class MyListArray<E> {
 
     @Override
     public String toString() {
-        return "MyListArray{" +
+        return "collections.MyListArray{" +
                 "arr=" + Arrays.toString(arr) +
                 '}';
     }
