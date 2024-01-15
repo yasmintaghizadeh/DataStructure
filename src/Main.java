@@ -1,4 +1,6 @@
-import collections.MyListArray;
+import arraylist.MyListArray;
+import balancedparanthesis.BalancedParentheses;
+import stackusage.PostFixEvaluator;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,11 +25,13 @@ public class Main {
 //
 //        datastructures.DataStructureSort.bubbleSort(ints1,ints1.length);
 //        datastructures.DataStructureSort.display(ints1);
-        MyListArray<Integer> integers=new MyListArray<>();
-        integers.add(25);
-        System.out.println(integers.get(10));
-        integers.remove(5);
-        System.out.println(integers.toString());
+//        MyListArray<Integer> integers=new MyListArray<>();
+//        integers.add(25);
+//        System.out.println(integers.get(10));
+//        integers.remove(5);
+//        System.out.println(integers.toString());
+
+        System.out.println(BalancedParentheses.balancedParentheses("((a+b)+c"));
 
 
     }
