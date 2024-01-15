@@ -3,7 +3,6 @@ package queue;
 public class Queue {
     int arr[], front, rear, cap, n1;
 
-    // Queue constructor
     Queue(int n)
     {
         arr = new int[n];
@@ -13,7 +12,6 @@ public class Queue {
         n = 0;
     }
 
-    // dequeue function for removing the front element
     public void dequeue()
     {
         // check for queue underflow
@@ -29,10 +27,8 @@ public class Queue {
         n1--;
     }
 
-    // enqueue function for adding an item to the rear
     public void enqueue(int val)
     {
-        // check for queue overflow
         if (isFull())
         {
             System.out.println("OverFlow!!Cannot add more values");
@@ -46,7 +42,6 @@ public class Queue {
         n1++;
     }
 
-    // peek function to return front element of the queue
     public int peek()
     {
         if (isEmpty())
@@ -57,19 +52,16 @@ public class Queue {
         return arr[front];
     }
 
-    // returns the size of the queue
     public int size()
     {
         return n1;
     }
 
-    // to check if the queue is empty or not
     public Boolean isEmpty()
     {
         return (size() == 0);
     }
 
-    // to check if the queue is full or not
     public Boolean isFull()
     {
         return (size() == cap);
